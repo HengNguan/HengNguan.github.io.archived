@@ -1,5 +1,5 @@
 # 全国中学华语辩论比赛（网辩）计时器
-Live Demo: [点这里]（https://hengnguan.github.io/）
+Live Demo: [点这里](https://hengnguan.github.io/）
 
 ## Build in ReactJS
 ## 欢迎其他人士自行pull and push :D
