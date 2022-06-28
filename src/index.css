@@ -18,7 +18,7 @@ section{
   height: 100vh;
   display: flex;
   justify-content: center;
-   align-items: center; 
+  align-items: center; 
   color: white;
   scroll-snap-align: start;
 }
@@ -26,13 +26,24 @@ section{
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .one {
   background-color: rgb(36,164,138);
 }
-.two{
+.three{
   background-color: rgb(211,79,79);
 }
-.three{
+.two{
   background-color: rgb(67,97,175);
+}
+.timer-heading {
+  font-size: 10px;
+  font-weight: 400;
+  /* font-family: 'Roboto'; */
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,5 +1,10 @@
 import { Component } from "react";
 import './index.css'
+// import {useRouter} from "next/router";
+
+// const router = useRouter();
+// const query = router.query;
+// const name = query.name; 
 
 class DigitalTimer1 extends Component {
     state = {
@@ -61,11 +66,12 @@ class DigitalTimer1 extends Component {
     renderTimerControlOptions = () => {
         const {isTimerRunning} = this.state
         const playImageUrl =
-          'https://assets.ccbp.in/frontend/react-js/play-icon-img.png'
+          'https://cdn-icons-png.flaticon.com/512/0/375.png'
         const stopImageUrl =
-          'https://assets.ccbp.in/frontend/react-js/pause-icon-img.png'
+          'https://cdn2.iconfinder.com/data/icons/music-player-8/64/pause-512.png'
         const resetImageUrl =
-          'https://assets.ccbp.in/frontend/react-js/reset-icon-img.png'
+          'https://icons-for-free.com/download-icon-bx+reset-1325051909167782801_512.png'
+      
         const startStopImage = isTimerRunning ? stopImageUrl : playImageUrl
         const startStopAltText = isTimerRunning ? 'pause icon' : 'play icon'
         const startStopText = isTimerRunning ? '停止' : '开始'
@@ -85,6 +91,7 @@ class DigitalTimer1 extends Component {
                 <h1 className="start-stop-text">{startStopText}</h1>
               </div>
             </button>
+            
     
             <button
               className="start-stop-button"
@@ -93,8 +100,7 @@ class DigitalTimer1 extends Component {
             >
               <div className="start-stop-container">
                 <img src={resetImageUrl} className="reset-img" alt="reset icon" />
-                <br/><br/><br/><br/><br/><br/>
-                <h1 className="start-stop-text">重启</h1>
+                <h1 className="start-stop-text">重置</h1>
               </div>
             </button>
           </div>
@@ -116,9 +122,6 @@ class DigitalTimer1 extends Component {
         const timerStatusText = isTimerRunning ? '计时中' : '暂停中'
         return (
           <div className="app-container">
-            <div className="header-container">
-              <h1 className="timer-heading">正方任一辩手陈词发言</h1>
-            </div>
             <div>
               <div>
                 <div className="timer-block">
